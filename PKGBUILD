@@ -1,14 +1,14 @@
 pkgname=pencil2d
-pkgver=0.6.5.0
+pkgver=0.6.6.0
 pkgrel=1
-_commit=50a0c7c318f38988af85d34e955a5a78d3953474
+_commit=3b3229e2d95e78aff9fac09cc4d9b0d94e1a7535
 pkgdesc="Create traditional hand-drawn animation using both bitmap and vector graphics"
 arch=('x86_64')
 url="https://www.pencil2d.org/"
 license=('GPL')
 depends=('ffmpeg' 'qt5-svg' 'qt5-multimedia' 'qt5-tools')
 source=("${pkgname}.zip::https://github.com/pencil2d/pencil/archive/${_commit}.zip")
-md5sums=('6cadf1803114cdf04dbf53d8b459ee9e')
+md5sums=('8520dc2404556f9c6944df224728a98a')
 
 prepare() {
     cd "${srcdir}/pencil-${_commit}"
