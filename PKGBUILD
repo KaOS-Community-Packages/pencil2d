@@ -12,7 +12,7 @@ sha256sums=('e0ed4a1b062d713d3556a9211fbdf0e20d8534ca4787dc49248052c97c1b416e')
 
 prepare() {
     cd "${srcdir}/pencil-${pkgver}"
-    qmake-qt5 CONFIG+=release CONFIG+=PENCIL2D_RELEASE VERSION=${pkgver}
+    qmake-qt6 CONFIG+=release CONFIG+=PENCIL2D_RELEASE VERSION=${pkgver}
 }
 
 build() {
